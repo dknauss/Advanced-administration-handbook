@@ -1,4 +1,6 @@
 # WordPress Advanced Administration Handbook
+[![License](https://img.shields.io/github/license/dknauss/Advanced-administration-handbook)](LICENSE)
+
 
 This is the repository for the **WordPress Advanced Administration Handbook** a collaboration between the Hosting Team and the Documentation Team.
 
