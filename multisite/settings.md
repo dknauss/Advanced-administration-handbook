@@ -2,7 +2,7 @@
 
 The **Network Admin Settings** is where a network admin sets and changes settings for the network as a whole. The first site is the main site in the network and network settings are pulled from that original site’s options.
 
-![](https://i0.wp.com/wordpress.org/documentation/files/2020/02/superadmin-options.png?fit=1024%2C751&ssl=1)
+![The Network Settings screen, showing the Operational, Registration, New Site, Upload, Language, and Menu settings sections](https://raw.githubusercontent.com/WordPress/Advanced-administration-handbook/main/assets/network-admin-settings.png)
 
 ## Operational Settings
 
@@ -119,7 +119,7 @@ Limit total size of files uploaded to [ 50 ] MB.
 
 **Upload file types**
 
-Default is `jpg jpeg png gif mp3 mov avi wmv midi mid pdf m2ts`.
+The default list is populated by WordPress during network setup from `get_allowed_mime_types()`, which covers common image, video, audio, text, document, archive, and Office formats. The exact set of extensions varies between WordPress versions as new types are added; to see the current default for your installation, check the `upload_filetypes` value in the `wp_sitemeta` table or inspect [`wp_get_mime_types()`](https://github.com/WordPress/WordPress/blob/master/wp-includes/functions.php) in WordPress core.
 
 Note: Adding arbitrary file types will not work unless a corresponding function is also hooked to [upload_mimes](https://developer.wordpress.org/reference/hooks/upload_mimes/) filter. See the `wp_get_mime_types` function in [wp-includes/functions.php](https://github.com/WordPress/WordPress/blob/master/wp-includes/functions.php) for the current default set of supported mime-types / file extensions. Adding mime types in the 'upload file types' field not listed in the default set will **NOT** work unless you've added them using the [upload_mimes](https://developer.wordpress.org/reference/hooks/upload_mimes/) filter! Uploading files with mime types not supported (without adding them using the filter) will fail with the message "Sorry, this file type is not permitted for security reasons".
 
