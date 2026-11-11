@@ -186,6 +186,8 @@ Replace `wp_users` with your actual table name, `PASSWORD_HASH` with the hash yo
 
 Run these commands at the `mysql>` prompt. The hash contains `$` characters, which your shell can change if you pass the command to `mysql -e` inside double quotes.
 
+Whichever database method you use, log in with the new password to confirm that it works, for example in a private browser window. Changing the stored hash also signs the user out of any existing sessions.
+
 ## Additional Resources
 
 - [Official WordPress password recovery documentation](https://wordpress.org/documentation/article/reset-your-password/)
