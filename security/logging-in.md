@@ -184,6 +184,8 @@ WHERE ID = USER_ID;
 
 Replace `wp_users` with your actual table name, `PASSWORD_HASH` with the hash you created, and `USER_ID` with the user's ID. If you copy these commands, make sure the quotes are straight quotes (`'`), not curly quotes (`‘ ’`), which MySQL rejects.
 
+Run these commands at the `mysql>` prompt. The hash contains `$` characters, which your shell can change if you pass the command to `mysql -e` inside double quotes.
+
 ## Additional Resources
 
 - [Official WordPress password recovery documentation](https://wordpress.org/documentation/article/reset-your-password/)
